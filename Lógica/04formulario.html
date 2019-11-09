@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>04 Formulario</title> 
+
+    <!-- JavaScript -->
+    <script>
+       //Função
+       function calcular(){
+           //Obter os números
+           var n1= parseFloat(document.getElementById("numero1").value);
+           var n2= parseFloat(document.getElementById("numero2").value);
+
+           //calculo de média
+           var media = (n1 + n2) / 2;
+
+        //Exibir resultado
+        document.getElementById("resultado").innerHTML = "A média é "+media.toFixed(1);
+    
+       }
+
+    </script>
+</head>
+<body>
+    
+    <input type="number" placeholder="Nota 1" id="numero1">
+    <input type="number" placeholder="Nota 2" id="numero2"> 
+    <button onclick="calcular()">calcular</button>
+
+    <h1 id="resultado"></h1>
+
+
+
+
+
+</body>
+</html>

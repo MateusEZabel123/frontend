@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercicio 02</title> 
+
+    <!-- JavaScript -->
+
+    <script>
+        //Função
+        function calcular(){
+            //Obter os números
+            var n1= parseFloat(document.getElementById("numero1").value);
+            var n2= parseFloat(document.getElementById("numero2").value);
+            var n3= parseFloat(document.getElementById("numero3").value);
+
+            //Calculo da média
+            var media = (n1 + n2 + n3)  / 3;
+
+
+            //Exibir resultado
+            document.getElementById("resultado").innerHTML = "A média é " +media.toFixed(1);
+         //Condicioanl
+         if(media >= 7){
+            alert("Aprovado");
+         }else{
+             alert("reprovado");
+         } 
+        }
+
+        
+    
+    
+    </script>
+
+
+
+
+
+
+
+</head>
+<body>
+    <input type="number" placeholder="Nota1" id="numero1">
+    <input type="number" placeholder="Nota2" id="numero2">
+    <input type="number" placeholder="Nota3" id="numero3">
+    <button onclick="calcular()">calcular</button>  
+
+    <h1 id= "resultado"></h1>
+
+
+
+
+
+
+</body>
+</html>
